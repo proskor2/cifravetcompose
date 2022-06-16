@@ -1,3 +1,35 @@
 <resources>
-    <string name="app_name">cifravetcompose</string>
+    <string name="app_name">CifraVet</string>
+    <string name="button_connect">Подключить</string>
+    <string name="text_nocards">Нет карты? Приобрести</string>
+    <string name="ihavepets">Есть добавленные питомцы</string>
+    <string name="alert_tip_title">Подсказка</string>
+    <string name="alert_tip_text">Приложите приобретенный NFC-токен к устройству для их сопряжения, это не займет много времени</string>
+    <string name="button_close">Закрыть</string>
+    <string name="pet_info_empty">Информация о вашем питомце отсутствует. Перейдите в редактирование для заполнения профиля</string>
+    <string name="button_edit">Редактировать</string>
+    <string name="change_pin">Изменить пин-код</string>
+    <string name="unpin">Открепить</string>
+    <string name="add_tag">Добавить метку</string>
+    <string name="insert_pin">Введите пароль</string>
+    <string name="repeat_pin">Повторите пароль</string>
+    <string name="button_change_pin">Изменить пин</string>
+    <string name="change_pin_text">Для восстановления пин-кода метки по умолчанию введите  ваш адрес электронной почты</string>
+    <string name="no_data">Нет данных</string>
+    <string name="email">Электронная почта</string>
+    <string name="age">Возраст</string>
+    <string name="weight">Вес</string>
+    <string name="phone">Телефон</string>
+    <string name="kind">Вид</string>
+    <string name="name_pet">Имя питомца</string>
+    <string name="breed">Порода</string>
+    <string name="weight_kg">Вес, кг</string>
+    <string name="year_birth">Год рождения</string>
+    <string name="phone_owner">Телефон владельца</string>
+    <string name="note">Примечание</string>
+    <string name="button_save">Сохранить</string>
+    <string name="gender">Пол</string>
+    <string name="color_pet">Окрас</string>
+    <string name="pin_problem">Не можете войти?</string>
+    <string name="pin_error">Введенный пароль не корректен </string>
 </resources>

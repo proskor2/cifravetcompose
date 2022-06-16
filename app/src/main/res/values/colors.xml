@@ -5,6 +5,46 @@
     <color name="purple_700">#FF3700B3</color>
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
+
+    // main colors
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="dark">#263238</color>
+    <color name="error">#93173F</color>
+    <color name="primary">#2FAC65</color>
+    <color name="primarypressed">#3B8159</color>
+    <color name="primaryfocused">#61D694</color>
+    <color name="primarydisable">#80D6A5</color>
+    <color name="secondary">#2F7699</color>
+    <color name="secondarypressed">#375F72</color>
+    <color name="secondaryfocused">#62A9CC</color>
+    <color name="secondarydisable">#7EB3CC</color>
+    <color name="tretiarly">#91DB3C</color>
+    <color name="tretiarlypressed">#7BA44B</color>
+    <color name="tretiarlyfocused">#B1ED6C</color>
+    <color name="tretiarlydisable">#C1ED8E</color>
+    // green colors
+    <color name="green1">#127347</color>
+    <color name="green2">#408465</color>
+    <color name="green3">#37B079</color>
+    <color name="green4">#69D8A5</color>
+    <color name="green5">#86D8B3</color>
+    // coral colors
+    <color name="coral1">#A6401A</color>
+    <color name="coral2">#BF775D</color>
+    <color name="coral3">#FF7F50</color>
+    <color name="coral4">#FF9F7C</color>
+    <color name="coral5">#FFB99F</color>
+    // blue colors
+    <color name="blue1">#13466A</color>
+    <color name="blue2">#3F627B</color>
+    <color name="blue3">#3A78A4</color>
+    <color name="blue4">#6CA7D1</color>
+    <color name="blue5">#87B3D1</color>
+    // gray colors
+    <color name="gray1">#616161</color>
+    <color name="gray2">#7A7A7A</color>
+    <color name="gray3">#979797</color>
+    <color name="gray4">#BEBEBE</color>
+    <color name="gray5">#F0F0F0</color>
 </resources>
