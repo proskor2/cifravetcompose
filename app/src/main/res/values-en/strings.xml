@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CifraVet</string>
+    <string name="button_connect">Connect</string>
+    <string name="text_nocards">No card? Buy</string>
+    <string name="ihavepets">I have added pets</string>
+    <string name="alert_tip_title">Help</string>
+    <string name="alert_tip_text">Attach the purchased NFC tag to the device to pair them. Click "Close" to start the process. \n
+        P.S. Use the QR code if your device does not support NFC or if pairing fails</string>
+    <string name="button_close">Close</string>
+    <string name="pet_info_empty">There is no information about your pet. Switch to edit the profile</string>
+    <string name="button_edit">Edit</string>
+    <string name="change_pin">Change pin</string>
+    <string name="unpin">Unpin</string>
+    <string name="add_tag">Add tag</string>
+    <string name="insert_pin">Insert password</string>
+    <string name="repeat_pin">Repeat password</string>
+    <string name="button_change_pin">Change pin</string>
+    <string name="change_pin_text">For restore PIN code, enter your email address</string>
+    <string name="no_data">No data</string>
+    <string name="email">Email</string>
+    <string name="age">Age</string>
+    <string name="weight">Weight</string>
+    <string name="phone">Phonenumber</string>
+    <string name="kind">Kind</string>
+    <string name="name_pet">Nickname</string>
+    <string name="breed">Breed</string>
+    <string name="weight_kg">Weight</string>
+    <string name="year_birth">Date of birth</string>
+    <string name="phone_owner">Owner phone</string>
+    <string name="note">Comment</string>
+    <string name="button_save">Save</string>
+    <string name="gender">Gender</string>
+    <string name="color_pet">Color</string>
+    <string name="pin_problem">Can\'t get in?</string>
+    <string name="pin_error">Password is incorrected</string>
+</resources>

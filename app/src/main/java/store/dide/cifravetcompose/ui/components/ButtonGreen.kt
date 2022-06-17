@@ -28,7 +28,7 @@ import store.dide.cifravetcompose.ui.theme.Typography
 
 
 @Composable
-fun ButtonNext(title: String) {
+fun ButtonGreen(title: String) {
     Button(modifier = Modifier
         .size(150.dp, 50.dp)
         .padding(1.dp)
@@ -45,10 +45,29 @@ fun ButtonNext(title: String) {
     }
 }
 
+@Composable
+fun ButtonGreen175(title: String) {
+    Button(modifier = Modifier
+        .size(175.dp, 50.dp)
+        .padding(1.dp)
+        ,
+        onClick = { },
+        shape = RoundedCornerShape(10),
+        colors = ButtonDefaults.textButtonColors(PrimaryColor),
+
+        ) {
+        Text(text = title,
+            color = Color.White,
+            fontSize = 17.sp,
+            fontFamily = Typography.body1.fontFamily)
+    }
+}
+
+
 
 @Preview(showBackground = true)
 @Composable
-fun showButton() {
-    ButtonNext(title = "Подключить")
+fun showButtonGreen() {
+    ButtonGreen(title = "Подключить")
 }
 
