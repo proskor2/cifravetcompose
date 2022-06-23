@@ -4,6 +4,7 @@ import android.text.style.ForegroundColorSpan
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.CircleShape
@@ -29,45 +30,67 @@ import store.dide.cifravetcompose.ui.theme.Typography
 
 @Composable
 fun ButtonGreen(title: String) {
-    Button(modifier = Modifier
-        .size(150.dp, 50.dp)
-        .padding(1.dp)
-        ,
-        onClick = { },
-        shape = RoundedCornerShape(10),
-        colors = ButtonDefaults.textButtonColors(PrimaryColor),
-
-    ) {
-        Text(text = title,
-        color = Color.White,
-        fontSize = 17.sp,
-        fontFamily = Typography.body1.fontFamily)
-    }
-}
-
-@Composable
-fun ButtonGreen175(title: String) {
-    Button(modifier = Modifier
-        .size(175.dp, 50.dp)
-        .padding(1.dp)
-        ,
+    Button(
+        modifier = Modifier
+            .size(150.dp, 50.dp)
+            .padding(1.dp),
         onClick = { },
         shape = RoundedCornerShape(10),
         colors = ButtonDefaults.textButtonColors(PrimaryColor),
 
         ) {
-        Text(text = title,
+        Text(
+            text = title,
             color = Color.White,
             fontSize = 17.sp,
-            fontFamily = Typography.body1.fontFamily)
+            fontFamily = Typography.body1.fontFamily
+        )
     }
 }
 
+@Composable
+fun ButtonGreen175(title: String) {
+    Button(
+        modifier = Modifier
+            .size(175.dp, 50.dp)
+            .padding(1.dp),
+        onClick = { },
+        shape = RoundedCornerShape(10),
+        colors = ButtonDefaults.textButtonColors(PrimaryColor),
+
+        ) {
+        Text(
+            text = title,
+            color = Color.White,
+            style = Typography.h3,
+        )
+    }
+}
+
+@Composable
+fun ButtonGreenWide(title: String) {
+    Button(
+        modifier = Modifier
+            .padding(1.dp)
+            .fillMaxWidth(),
+        onClick = { },
+        shape = RoundedCornerShape(10),
+        colors = ButtonDefaults.textButtonColors(PrimaryColor),
+
+        ) {
+        Text(
+            text = title,
+            color = Color.White,
+            fontSize = 17.sp,
+            fontFamily = Typography.body1.fontFamily
+        )
+    }
+}
 
 
 @Preview(showBackground = true)
 @Composable
 fun showButtonGreen() {
-    ButtonGreen(title = "Подключить")
+    ButtonGreen175(title = "Подключить")
 }
 
