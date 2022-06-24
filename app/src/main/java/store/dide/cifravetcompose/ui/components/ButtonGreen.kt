@@ -1,8 +1,10 @@
 package store.dide.cifravetcompose.ui.components
 
+import android.service.autofill.OnClickAction
 import android.text.style.ForegroundColorSpan
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.background
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
@@ -33,7 +35,8 @@ fun ButtonGreen(title: String) {
     Button(
         modifier = Modifier
             .size(150.dp, 50.dp)
-            .padding(1.dp),
+            .padding(1.dp)
+            .clickable { },
         onClick = { },
         shape = RoundedCornerShape(10),
         colors = ButtonDefaults.textButtonColors(PrimaryColor),

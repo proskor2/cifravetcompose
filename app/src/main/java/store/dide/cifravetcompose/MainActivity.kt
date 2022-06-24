@@ -8,6 +8,8 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.navigation.compose.rememberNavController
+import store.dide.cifravetcompose.ui.navigation.MainNavigation
 import store.dide.cifravetcompose.ui.theme.CifravetcomposeTheme
 
 class MainActivity : ComponentActivity() {
@@ -15,11 +17,10 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             CifravetcomposeTheme {
-                Column() {
-
-                }
-                }
+               MainNavigation()
+            }
         }
+
     }
 }
 

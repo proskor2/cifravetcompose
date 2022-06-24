@@ -13,10 +13,11 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.navigation.NavController
 import store.dide.cifravetcompose.R
 
 @Composable
-fun ShopScreen() {
+fun ShopScreen(navController: NavController) {
     LazyColumn(modifier = Modifier
         .fillMaxSize(),
     horizontalAlignment = Alignment.CenterHorizontally,
@@ -27,7 +28,7 @@ fun ShopScreen() {
 
 
 @Composable
-fun EmptyShopScreen() {
+fun EmptyShopScreen(navController: NavController) {
     Column(modifier = Modifier
         .fillMaxSize(),
         horizontalAlignment = Alignment.CenterHorizontally,
@@ -42,5 +43,5 @@ fun EmptyShopScreen() {
 @Composable
 fun showShopScreen() {
 //    ShopScreen()
-    EmptyShopScreen()
+//    EmptyShopScreen()
 }
