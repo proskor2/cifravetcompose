@@ -8,6 +8,8 @@ import androidx.activity.compose.setContent
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.ktx.Firebase
+import store.dide.cifravet.models.Shops
+import store.dide.cifravet.models.Tags
 import store.dide.cifravetcompose.data.firebaseauth.FireBaseAuth
 import store.dide.cifravetcompose.data.firestore.firestoreGetData
 import store.dide.cifravetcompose.ui.navigation.MainNavigation
@@ -36,7 +38,8 @@ class MainActivity : ComponentActivity() {
         {
             Log.d("FBAuth", "UID -> ${currentUser.uid}")
 // get data Shops
-            firestoreGetData("shops")
+           val shops = firestoreGetData("shops", Shops::class.java)
+
         } else {
             Toast.makeText(this, getString(R.string.autherror), Toast.LENGTH_LONG).show()
         }
