@@ -31,6 +31,7 @@ fun StartScreen(navController: NavController) {
         Box(
             modifier = Modifier
                 .padding(10.dp)
+                .fillMaxWidth()
                 .clickable {
 
                 },

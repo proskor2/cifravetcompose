@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "583177976420",
+    "project_id": "cifravet",
+    "storage_bucket": "cifravet.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:583177976420:android:f7d99aec6064c2754d3d71",
+        "android_client_info": {
+          "package_name": "store.dide.cifravetcompose"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "583177976420-mg9pls7u5m7r4rjevvr4tt6n1n019k50.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "store.dide.cifravetcompose",
+            "certificate_hash": "904817b5b31e70763c5befc43a1cfde845103620"
+          }
+        },
+        {
+          "client_id": "583177976420-rt8305u1n0a0t2n75nftn68jcambqks9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjXH8iMmhKPDk6mJ40UOJmkd2nywgDIuY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "583177976420-rt8305u1n0a0t2n75nftn68jcambqks9.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "583177976420-k4i8gusrduipduj73fci5d67d989hfue.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "store.dide.cifravet",
+                "app_store_id": "1622816372"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

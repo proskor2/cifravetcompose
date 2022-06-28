@@ -14,10 +14,14 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.NavController
+import androidx.navigation.compose.rememberNavController
 import store.dide.cifravetcompose.R
 
 @Composable
 fun ShopScreen(navController: NavController) {
+
+
+
     LazyColumn(modifier = Modifier
         .fillMaxSize(),
     horizontalAlignment = Alignment.CenterHorizontally,
@@ -42,6 +46,6 @@ fun EmptyShopScreen(navController: NavController) {
 @Preview (showBackground = true)
 @Composable
 fun showShopScreen() {
-//    ShopScreen()
+    ShopScreen(rememberNavController())
 //    EmptyShopScreen()
 }
