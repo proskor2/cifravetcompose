@@ -4,6 +4,7 @@ import androidx.compose.runtime.Composable
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import store.dide.cifravetcompose.data.singletons.FirestoreGetSingletone
 import store.dide.cifravetcompose.ui.screens.*
 
 @Composable
@@ -19,7 +20,7 @@ fun MainNavigation() {
         }
 
         composable("shop_screen") {
-            ShopScreen(navController)
+            ShopScreen(navController, FirestoreGetSingletone.listShops)
         }
 
         composable("empty_shop_screen") {

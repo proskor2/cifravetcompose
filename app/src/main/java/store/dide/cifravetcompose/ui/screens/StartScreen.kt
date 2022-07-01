@@ -15,6 +15,7 @@ import androidx.navigation.NavController
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
 import store.dide.cifravetcompose.R
+import store.dide.cifravetcompose.data.singletons.FirestoreGetSingletone
 import store.dide.cifravetcompose.ui.components.*
 import store.dide.cifravetcompose.ui.navigation.MainNavigation
 
@@ -75,7 +76,12 @@ fun StartScreen(navController: NavController) {
         Text(text = stringResource(id = R.string.text_nocards),
             modifier = Modifier
                 .clickable {
-                    navController.navigate("empty_shop_screen")
+                    if (FirestoreGetSingletone.listShops.isEmpty()){
+                        navController.navigate("empty_shop_screen")
+                    } else {
+                        navController.navigate("shop_screen")
+                    }
+
                 })
 
         Spacer(

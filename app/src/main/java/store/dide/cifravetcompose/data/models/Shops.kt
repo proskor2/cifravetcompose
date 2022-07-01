@@ -12,4 +12,6 @@ data class Shops(
     val name: String,
     val priority: Int,
     val updated: DateFormat
-)
+){
+
+}

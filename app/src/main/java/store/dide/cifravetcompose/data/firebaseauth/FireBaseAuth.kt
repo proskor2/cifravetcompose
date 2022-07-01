@@ -9,7 +9,7 @@ import com.google.firebase.auth.FirebaseUser
 
 class FireBaseAuth() {
 
-    val TAG = "FBAuth"
+    val TAG = "FSDBAuth"
 
     fun signInAnonimously(auth: FirebaseAuth, context: Context) {
         auth.signInAnonymously()
@@ -17,6 +17,7 @@ class FireBaseAuth() {
                 if (task.isSuccessful) {
                     Log.d(TAG, "signInAnonymously:success")
                     val user = auth.currentUser
+                    Log.d(TAG, "User: ${user?.uid}")
                     updateUI(user)
                 } else {
                     Log.w(TAG, "signInAnonymously:failure", task.exception)
