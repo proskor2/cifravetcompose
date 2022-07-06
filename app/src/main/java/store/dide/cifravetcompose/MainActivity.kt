@@ -45,7 +45,6 @@ class MainActivity : ComponentActivity() {
         }
 // get Shops data
         firestoreGetData("shops", Shops::class.java, FirestoreGetSingletone.listShops)
-        firestoreGetData("tags", Tags::class.java, FirestoreGetSingletone.listTags)
     }
 
     override fun onResume() {

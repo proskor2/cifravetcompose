@@ -3,7 +3,7 @@ package store.dide.cifravetcompose.data.firestore
 import android.util.Log
 
 
-fun <T> firestireAddData(collection: String, data: Class<T>){
+fun <T> firestoreAddData(collection: String, data: Class<T>){
     val TAG = "FSDB"
     FirestoreDB().db.collection(collection)
         .add(data)

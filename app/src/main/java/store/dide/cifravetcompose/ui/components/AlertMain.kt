@@ -22,31 +22,17 @@ import com.skydoves.landscapist.glide.GlideImage
 import store.dide.cifravetcompose.R
 
 @Composable
-fun alertNFC(mutableState: MutableState<Boolean>) {
-
+fun alertMain(mutableState: MutableState<Boolean>, title: String, text: String) {
     AlertDialog(
         onDismissRequest = {
             mutableState.value = false
         },
         title = {
-            Text(text = stringResource(id = R.string.alert_tip_title))
+            Text(text = title)
         },
 
         text = {
-            Column(
-                modifier = androidx.compose.ui.Modifier
-                    .fillMaxWidth()
-
-            ) {
-
-                Text(
-                    text = stringResource(id = R.string.alert_tip_text)
-                )
-                val image = painterResource(id = R.drawable.email)
-                GlideImage(imageModel = image)
-
-            }
-
+            Text(text = text)
         },
         buttons = {
             Box(
@@ -56,13 +42,5 @@ fun alertNFC(mutableState: MutableState<Boolean>) {
                 ButtonWhite(title = stringResource(id = R.string.button_close), mutableState)
             }
         }
-
     )
-}
-
-
-@Preview(showBackground = true)
-@Composable
-fun showAlertNfc() {
-//    alertNFC()
 }

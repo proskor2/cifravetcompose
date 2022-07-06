@@ -35,4 +35,6 @@
     <string name="pin_problem">Can\'t get in?</string>
     <string name="pin_error">Password is incorrected</string>
     <string name="autherror">Authorization error</string>
+    <string name="nfcmoduleempty">Your phone does not have NFC. Use the QR code scanning function</string>
+    <string name="nfcmoduleoff">To read the tag, you must enable the NFC module</string>
 </resources>

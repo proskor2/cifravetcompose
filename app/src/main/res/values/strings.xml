@@ -33,4 +33,6 @@
     <string name="pin_problem">Не можете войти?</string>
     <string name="pin_error">Введенный пароль не корректен </string>
     <string name="autherror">Ошибка авторизации</string>
+    <string name="nfcmoduleempty">На вашем телефоне отсутствует модуль NFC. Используйте функцию сканирования QR кода</string>
+    <string name="nfcmoduleoff">Для считывания тэга необходимо включить модуль NFC</string>
 </resources>
