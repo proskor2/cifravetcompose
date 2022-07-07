@@ -1,17 +1,20 @@
 package store.dide.cifravetcompose
 
+import android.os.Build
 import android.os.Bundle
 import android.provider.Settings
 import android.util.Log
 import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.annotation.RequiresApi
 import com.google.firebase.auth.FirebaseAuth
 import store.dide.cifravet.models.Shops
 import store.dide.cifravet.models.Tags
 import store.dide.cifravetcompose.data.firebaseauth.FireBaseAuth
 import store.dide.cifravetcompose.data.singletons.FirestoreGetSingletone
 import store.dide.cifravetcompose.data.firestore.firestoreGetData
+import store.dide.cifravetcompose.data.firestore.firestoreGetDataShops
 import store.dide.cifravetcompose.data.singletons.UIDs
 import store.dide.cifravetcompose.ui.navigation.MainNavigation
 import store.dide.cifravetcompose.ui.theme.CifravetcomposeTheme
@@ -33,6 +36,8 @@ class MainActivity : ComponentActivity() {
 
     }
 
+
+    @RequiresApi(Build.VERSION_CODES.N)
     override fun onStart() {
         super.onStart()
 // authorization check user
@@ -44,7 +49,7 @@ class MainActivity : ComponentActivity() {
             Toast.makeText(this, getString(R.string.autherror), Toast.LENGTH_LONG).show()
         }
 // get Shops data
-        firestoreGetData("shops", Shops::class.java, FirestoreGetSingletone.listShops)
+        firestoreGetDataShops("shops")
     }
 
     override fun onResume() {

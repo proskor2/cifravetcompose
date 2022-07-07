@@ -25,10 +25,10 @@ import store.dide.cifravetcompose.ui.components.ShopComponent
 fun ShopScreen(navController: NavController, listShops: ArrayList<Shops>) {
     LazyColumn(modifier = Modifier
         .fillMaxSize(),
-    horizontalAlignment = Alignment.CenterHorizontally,
-    verticalArrangement = Arrangement.Center){
-        items(listShops) { it ->
-            ShopComponent(name = it.name, description = it.description, logo = it.logo)
+    horizontalAlignment = Alignment.CenterHorizontally
+    ){
+        items(listShops) {
+            ShopComponent(name = it.name.toString(), description = it.description.toString(), logo = it.logo.toString() )
         }
     }
 }
